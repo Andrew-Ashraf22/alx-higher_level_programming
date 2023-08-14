@@ -32,7 +32,7 @@ int is_palindrome(listint_t **head)
 	}
 	temp = *head;
 
-	while (temp)
+	while (temp && temp->next)
 	{
 		if (temp->n != hold[j])
 		{
