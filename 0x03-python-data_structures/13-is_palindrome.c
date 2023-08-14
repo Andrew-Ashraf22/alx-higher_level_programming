@@ -11,6 +11,7 @@ int is_palindrome(listint_t **head)
 
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
+
 	while (temp)
 	{
 		i++;
@@ -21,29 +22,25 @@ int is_palindrome(listint_t **head)
 
 	if (hold == NULL)
 		return (0);
-	while (temp)
-	{
-		hold[j++] = temp->n;
-		temp = temp->next;
-	}
-	listint_t *head2 = NULL;
 
 	i--;
-	while (i >= 0)
+	while (temp)
 	{
-		add_nodeint_end(&head2, hold[i]);
-		i--;
+		hold[i--] = temp->n;
+		temp = temp->next;
 	}
 	temp = *head;
-	while (temp && head2)
+
+	while (temp)
 	{
-		if (temp->n != head2->n)
+		if (temp->n != hold[j])
 		{
+			free(hold);
 			return (0);
 		}
 		temp = temp->next;
-		head2 = head2->next;
+		j++;
 	}
-	free_listint(head2);
+	free(hold);
 	return (1);
 }
