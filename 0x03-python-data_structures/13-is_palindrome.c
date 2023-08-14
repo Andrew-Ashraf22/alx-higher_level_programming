@@ -1,4 +1,5 @@
 #include "lists.h"
+int is_palindrome(listint_t **head);
 /**
  *is_palindrome - checks list if palindrome
  *@head: the linked list
