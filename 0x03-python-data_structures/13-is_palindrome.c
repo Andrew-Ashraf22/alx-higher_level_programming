@@ -8,6 +8,7 @@ int is_palindrome(listint_t **head);
 int is_palindrome(listint_t **head)
 {
 	int i = 0;
+	int hold[20];
 	listint_t *temp;
 
 	if (*head == NULL || (*head)->next == NULL)
@@ -20,7 +21,6 @@ int is_palindrome(listint_t **head)
 		temp = temp->next;
 	}
 	temp = *head;
-	int hold[20];
 
 	i--;
 	while (temp)
