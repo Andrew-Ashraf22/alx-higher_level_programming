@@ -37,12 +37,10 @@ int is_palindrome(listint_t **head)
 	{
 		if (temp->n != hold[i])
 		{
-			free(hold);
 			return (0);
 		}
 		temp = temp->next;
 		i++;
 	}
-	free(hold);
 	return (1);
 }
