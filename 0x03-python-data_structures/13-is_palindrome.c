@@ -7,12 +7,13 @@ int is_palindrome(listint_t **head);
  */
 int is_palindrome(listint_t **head)
 {
-	int i = 0, j = 0;
-	listint_t *temp = *head;
+	int i = 0;
+	listint_t *temp;
 
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
 
+	temp = *head;
 	while (temp)
 	{
 		i++;
@@ -31,16 +32,16 @@ int is_palindrome(listint_t **head)
 		temp = temp->next;
 	}
 	temp = *head;
-
+	i = 0;
 	while (temp && temp->next)
 	{
-		if (temp->n != hold[j])
+		if (temp->n != hold[i])
 		{
 			free(hold);
 			return (0);
 		}
 		temp = temp->next;
-		j++;
+		i++;
 	}
 	free(hold);
 	return (1);
