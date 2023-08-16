@@ -2,4 +2,4 @@
 def best_score(a_dictionary):
     if a_dictionary == None:
         return (None)
-    return max(zip(a_dictionary, key= lambda x: a_dictionary[x]))
+     return (max(a_dictionary, key=a_dictionary.get))
