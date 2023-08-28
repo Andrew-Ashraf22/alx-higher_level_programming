@@ -1,0 +1,17 @@
+#!/bin/bash
+
+filename=$1
+
+# Check if filename is provided
+if [ -z "$filename" ]; then
+    echo "Please provide a filename."
+    exit 1
+fi
+
+touch "$filename"
+
+chmod u+x "$filename"
+
+echo "#!/usr/bin/python3" > "$filename"
+
+vim "$filename"
