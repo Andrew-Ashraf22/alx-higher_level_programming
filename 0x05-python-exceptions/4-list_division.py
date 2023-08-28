@@ -4,12 +4,13 @@ def list_division(my_list_1, my_list_2, list_length):
     new = [0] * list_length
     for i in range(max(len(my_list_1), len(my_list_2))):
         try:
+            f = 0
             res = my_list_1[i] / my_list_2[i]
             new[i] = res
         except ZeroDivisionError:
             print("division by 0")
             f = 1
-        except ValueError:
+        except (ValueError, TypeError):
             print("wrong type")
             f = 1
         except IndexError:
