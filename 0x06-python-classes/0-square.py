@@ -2,6 +2,6 @@
 """making a square class"""
 
 
-class square:
+class Square:
     """a square class"""
     pass
