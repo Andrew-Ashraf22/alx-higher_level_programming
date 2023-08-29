@@ -3,7 +3,12 @@
 
 
 class Square:
+    """a square class"""
     def __init__(self, size=0):
+        """make a square
+        Args:
+            size (int): size of square
+        """
         if isinstance(size, int):
             if size < 0:
                 raise ValueError("size must be >= 0")
