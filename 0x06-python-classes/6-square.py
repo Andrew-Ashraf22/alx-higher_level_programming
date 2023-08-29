@@ -8,6 +8,7 @@ class Square:
         """make a square
         Args:
             size (int): size of square
+            position (int, int): the position
         """
         self.__size = 0
         self.__position = (0, 0)
