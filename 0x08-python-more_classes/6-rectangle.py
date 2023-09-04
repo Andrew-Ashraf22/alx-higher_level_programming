@@ -3,12 +3,8 @@
 
 
 class Rectangle:
-    """ a rectangle class
-        
-        Attributes:
-            number_of_instances (int): number of instances
-    """
-    
+    """ a rectangle class"""
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
@@ -76,4 +72,3 @@ class Rectangle:
         """Prints bye when a rectangle is begin deleted"""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-
