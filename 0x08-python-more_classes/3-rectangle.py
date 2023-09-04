@@ -55,7 +55,7 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ""
 
-        strr = []
+        strr = ""
         for _ in range(self.height):
             strr += "#" * self.width + "\n"
         return strr.rstrip()
