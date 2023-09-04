@@ -62,7 +62,7 @@ class Rectangle:
 
         strr = ""
         for _ in range(self.height):
-            strr += self.print_sympol * self.width + "\n"
+            strr += str(self.print_symbol) * self.width + "\n"
         return strr.rstrip()
 
     def __repr__(self):
