@@ -7,7 +7,7 @@ def inherits_from(obj, a_class):
 
     Args:
         obj (any): The obj
-        a_class (type): The class 
+        a_class (type): The class
     Returns:
         true if obj is inheriting from class
     """
