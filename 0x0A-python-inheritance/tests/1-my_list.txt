@@ -1,0 +1,51 @@
+>>> MyList = __import__('1-my_list').MyList
+
+>>> list = MyList()
+>>> list.append(1)
+>>> list.append(4)
+>>> list.append(2)
+>>> list.append(3)
+>>> list.append(5)
+>>> print(list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(list)
+[1, 4, 2, 3, 5]
+
+>>> list = [222, 55, 1]
+>>> list.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'print_sorted'
+
+>>> list = []
+>>> list = MyList(list)
+>>> list.print_sorted()
+[]
+
+>>> list = MyList()
+>>> list.append(22)
+>>> list.append(22)
+>>> list.print_sorted()
+[22, 22]
+
+>>> unmade_list.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'unmade_list' is not defined
+
+>>> list = [21, 7, 14]
+>>> list = MyList(list)
+>>> list.print_sorted()
+[7, 14, 21]
+
+>>> list = [-2, -15, -22, 2, 0]
+>>> list = Mylist(list)
+>>> list.print_sorted()
+[-22, -15, -2, 0, 2]
+
+>>> list = [55]
+>>> list = MyList(list)
+>>> my_list.print_sorted()
+[55]
