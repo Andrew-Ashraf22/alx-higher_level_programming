@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Defines a class and inherited class-checking function."""
+"""make a function that checks if obj is inherting from class"""
 
 
 def is_kind_of_class(obj, a_class):
-    """Check if an object is an instance or inherited instance of a class.
+    """see if the object is inherting from class
 
     Args:
         obj (any): The obj
