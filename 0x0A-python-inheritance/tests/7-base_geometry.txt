@@ -1,0 +1,34 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+    >>> s = BaseGeometry()
+    >>> s.integer_validator("string", 12)
+
+    >>> s = BaseGeometry()
+    >>> s.area()
+    Traceback (most recent call last):
+    	      ...
+    Exception: area() is not implemented
+
+    >>> s = BaseGeometry()
+    >>> s.integer_validator("string", "string")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: string must be an integer
+
+    >>> s = BaseGeometry()
+    >>> s.integer_validator("string", -55)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: string must be greater than 0
+
+    >>> s = BaseGeometry()
+    >>> s.integer_validator("string", 0)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: string must be greater than 0
+
+    >>> s = BaseGeometry()
+    >>> s.integer_validator("string")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
