@@ -5,7 +5,6 @@ data struct"""
 
 def class_to_json(obj):
     """Return the dict of a simple data struct"""
-    def class_to_json(obj):
     json = {}
     attr = obj.__dict__
     for key, value in attr.items():
