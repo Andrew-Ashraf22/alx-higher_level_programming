@@ -2,6 +2,7 @@
 """make a Rectangle class"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """Represent a rectangle."""
 
@@ -96,8 +97,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """return a string reps of the rect"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                self.x, self.y,self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height)
 
     def to_dictionary(self):
         """return the dict reps of a rectangle"""
@@ -115,7 +116,7 @@ class Rectangle(Base):
             Args:
                 *args (int): the new values to update
                 **kwargs (dict): new values to update
-        """    
+        """
         if args:
             siz = len(args)
             if siz >= 1:
